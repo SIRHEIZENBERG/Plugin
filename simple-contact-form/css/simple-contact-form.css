@@ -1,0 +1,105 @@
+/* Custom contact form styles */
+body {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+label {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+input[type="email"] {
+  font-size: 1.1em;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.was-validated input[type="email"]:invalid {
+  border-color: red;
+}
+
+.was-validated input[type="email"]:invalid + .invalid-feedback {
+  display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  font-size: 1.1em;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.invalid-feedback {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8em;
+  display: none;
+}
+
+.was-validated input:invalid,
+.was-validated textarea:invalid {
+  border-color: red;
+}
+
+.was-validated .invalid-feedback {
+  display: block;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.g-recaptcha {
+  margin: 20px auto;
+  justify-content: center
+}
+
+.cf-form-error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8em;
+  display: none;
+}
+
+.was-validated .cf-form-error-message {
+  display: block;
+}
+
